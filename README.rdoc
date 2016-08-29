@@ -1,28 +1,18 @@
-== README
+This app is a link aggregator site, similar to Reddit or Hacker News, where a user can sign up, submit a link, as well as comment and vote up or down on link submissions.
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
-
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+Faker gem was used to seed the database with users, links and comments
 
 
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
+
+Getting started
+
+To get started with the app, clone the repo and then install the needed gems:
+
+$ bundle install --without production
+Next, migrate the database:
+
+$ rails db:migrate
+Finally, run the test suite to verify that everything is working correctly:
+
+$ rails server
+
